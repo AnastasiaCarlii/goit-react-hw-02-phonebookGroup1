@@ -16,6 +16,6 @@ export const StyledButton = styled.button`
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color: lightblue;
+  background-color: orange;
   cursor: pointer;
 `;

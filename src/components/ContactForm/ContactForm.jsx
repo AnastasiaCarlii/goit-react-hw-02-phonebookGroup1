@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
 import { StyledForm, StyledInput, StyledButton } from './ContactForm.styled.js';
 
-class ContactForm extends Component {
+export class ContactForm extends Component {
   state = {
     name: '',
+    number: '',
   };
 
   handleInputChange = event => {
@@ -41,5 +42,3 @@ class ContactForm extends Component {
     );
   }
 }
-
-export default ContactForm;
