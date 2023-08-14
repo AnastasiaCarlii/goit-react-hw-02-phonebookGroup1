@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ContactForm } from './ContactForm/ContactForm';
+import ContactForm from 'components/ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './SearchFilter/Filter';
 import {
@@ -63,9 +63,9 @@ class App extends Component {
     const { filter, contacts } = this.state;
     return (
       <Wrapper>
-        <div>
+        <div className="phonebook">
           <Heading>Phonebook</Heading>
-          <ContactForm onAddContact={this.handleAddContact} />
+          <ContactForm onSubmit={this.formSubmitData} />
           <ContactsTitle>Contacts</ContactsTitle>
           <FindContactByName>Find contacts by name</FindContactByName>
           <Filter value={filter} onChange={this.changeFilter} />
